@@ -7,8 +7,8 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Home Page</title>
-        <meta name="description" content="Welcome to my Next.js homepage" />
+        <title>🔨 David Reese's Portfolio 📐</title>
+        <meta name="description" content="Homepage for David Reese's Portfolio & Development Projects." />
       </Head>
 
       <main className={styles.main}>
