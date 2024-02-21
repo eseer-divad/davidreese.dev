@@ -9,7 +9,6 @@ export default function Home() {
       <Head>
         <title>Home Page</title>
         <meta name="description" content="Welcome to my Next.js homepage" />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
