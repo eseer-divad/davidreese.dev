@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
               <Link href="/blog" passHref>
-                <Nav.Link as="a">Blog</Nav.Link> {/* Wrap Nav.Link in Link */}
+                <Nav.Link as="a">Blog</Nav.Link>
               </Link>
               {/* For external links, you can use Nav.Link directly */}
               <Nav.Link href="https://www.linkedin.com/in/david-reese-09b0a2236/" target="_blank">LinkedIn</Nav.Link>
@@ -31,7 +31,7 @@ export default function RootLayout({ children }) {
       <div className={inter.className}>{children}</div>
       <footer className={index_styles.footer}>
         <p className={index_styles.description}>
-            This is a (React/Next/Bootstrap 5) portfolio website hosting the projects of David Reese.
+            @@ This is a (React/Next/Bootstrap 5) website, hosted with Vercel. @@
         </p>
       </footer>
     </>

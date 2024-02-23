@@ -7,6 +7,7 @@ import index_styles from '../styles/index.module.css';
 
 export default function Home() {
   // Cycle through title array, keep state
+  // TODO: "a developer" vs "a engineer" grammar
   const titles = ['developer.', 'designer.', 'engineer.', 'sysadmin.', ]
   const [currentTitle, setCurrentTitle] = useState(titles[0]);
 
@@ -33,7 +34,10 @@ export default function Home() {
         <h1 className={index_styles.title}>
         David is a {currentTitle}
         </h1>
-        <p>Currently Senior User Experience Designer at Zillow. Previously at Instacart, Hint, Blue Bottle Coffee, and CamelBak.</p>
+        {/* Add styles in new class other than title*/}
+        <p className={index_styles.title}>Currently a Web Designer at the Buchtel College of Arts & Sciences.</p>
+        <p className={index_styles.title}>Previously a Support Analyst, then Systems Administrator Intern w/ the IT Department. </p>
+        <p className={index_styles.title}>Employed & earning a B.S. of Computer Science @ The University of Akron.</p>
         <p className={index_styles.description}>
           Get started by editing <code className={index_styles.code}>src/pages/index.js</code>
         </p>
