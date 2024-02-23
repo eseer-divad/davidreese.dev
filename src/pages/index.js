@@ -33,6 +33,7 @@ export default function Home() {
         <h1 className={index_styles.title}>
         David is a {currentTitle}
         </h1>
+        <p>Currently Senior User Experience Designer at Zillow. Previously at Instacart, Hint, Blue Bottle Coffee, and CamelBak.</p>
         <p className={index_styles.description}>
           Get started by editing <code className={index_styles.code}>src/pages/index.js</code>
         </p>
