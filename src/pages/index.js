@@ -1,33 +1,42 @@
 // src/pages/index.js
-
+import React, { useState, useEffect } from 'react'
+import RootLayout from '@/app/layout';
 import Head from 'next/head';
 import global_styles from '../styles/globals.css';
 import index_styles from '../styles/index.module.css';
 
 export default function Home() {
+  // Cycle through title array, keep state
+  const titles = ['developer.', 'designer.', 'engineer.', 'sysadmin.', ]
+  const [currentTitle, setCurrentTitle] = useState(titles[0]);
+
+  useEffect(() => {
+    // arrow function to cycle the titles
+    const cycleTitles = () => {
+      const currentIndex = titles.indexOf(currentTitle);
+      const nextIndex = (currentIndex + 1) % titles.length;
+      setCurrentTitle(titles[nextIndex]);
+    };
+    // cycle every 1500 milliseconds 
+    const intervalId = setInterval(cycleTitles, 2000);
+    return () => clearInterval(intervalId);
+  }, [currentTitle]);
+
   return (
     <div className={index_styles.container}>
       <Head>
-        <title>🔨 David Reese's Portfolio 📐</title>
+        <title>Development Portfolio & Blog</title>
         <meta name="description" content="Homepage for David Reese's Portfolio & Development Projects." />
       </Head>
 
       <main className={index_styles.main}>
         <h1 className={index_styles.title}>
-          Welcome to My Next.js Homepage!
+        David is a {currentTitle}
         </h1>
         <p className={index_styles.description}>
           Get started by editing <code className={index_styles.code}>src/pages/index.js</code>
         </p>
-
-        {/* Add more content here as needed */}
       </main>
-
-      <footer className={index_styles.footer}>
-        <p className={index_styles.description}>
-            This is a (React/Next/Bootstrap 5) portfolio website hosting the projects of David Reese. 
-        </p>
-      </footer>
     </div>
   );
 }
