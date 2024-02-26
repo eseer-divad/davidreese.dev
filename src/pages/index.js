@@ -18,7 +18,7 @@ export default function Home() {
       const nextIndex = (currentIndex + 1) % titles.length;
       setCurrentTitle(titles[nextIndex]);
     };
-    // cycle every 1500 milliseconds 
+    // cycle every 2000 milliseconds 
     const intervalId = setInterval(cycleTitles, 2000);
     return () => clearInterval(intervalId);
   }, [currentTitle]);
