@@ -28,19 +28,18 @@ export default function Home() {
       <Head>
         <title>Development Portfolio & Blog</title>
         <meta name="description" content="Homepage for David Reese's Portfolio & Development Projects." />
-      </Head>
+      </Head> 
 
       <main className={index_styles.main}>
         <h1 className={index_styles.title}>
         David is a {currentTitle}
         </h1>
         {/* Add styles in new class other than title*/}
-        <p className={index_styles.title}>Currently a Web Designer at the Buchtel College of Arts & Sciences.</p>
-        <p className={index_styles.title}>Previously a Support Analyst, then Systems Administrator Intern w/ the IT Department. </p>
-        <p className={index_styles.title}>Employed & earning a B.S. of Computer Science @ The University of Akron.</p>
-        <p className={index_styles.description}>
-          Get started by editing <code className={index_styles.code}>src/pages/index.js</code>
-        </p>
+        <ul className={index_styles.bulletPoints}>
+          <li>Currently a Web Designer at the Buchtel College of Arts & Sciences.</li>
+          <li>Previously a Support Analyst, then Systems Administrator Intern with the IT Department.</li>
+          <li>Employed & earning a B.S. of Computer Science @ The University of Akron.</li>
+        </ul>
       </main>
     </div>
   );
