@@ -28,7 +28,7 @@ export default function Home() {
       <Head>
         <title>Development Portfolio & Blog</title>
         <meta name="description" content="Homepage for David Reese's Portfolio & Development Projects." />
-      </Head> 
+      </Head>  
 
       <main className={index_styles.main}>
         <h2 className={index_styles.title}>
