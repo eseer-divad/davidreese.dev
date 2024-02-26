@@ -24,16 +24,16 @@ export default function Home() {
   }, [currentTitle]);
 
   return (
-    <div className={index_styles.container}>
+    <div>
       <Head>
         <title>Development Portfolio & Blog</title>
         <meta name="description" content="Homepage for David Reese's Portfolio & Development Projects." />
-      </Head>  
+      </Head> 
 
       <main className={index_styles.main}>
-        <h2 className={index_styles.title}>
+        <h1 className={index_styles.title}>
         David is a {currentTitle}
-        </h2>
+        </h1>
         <ul className={index_styles.bulletPoints}>
           <li>Currently a Web Designer at the Buchtel College of Arts & Sciences.</li>
           <li>Previously a Support Analyst, then Systems Administrator Intern with the IT Department.</li>

@@ -1,14 +1,14 @@
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
+  align-items: left;
   padding: 6rem;
   min-height: 100vh;
 }
 
 .title {
-  margin-bottom: 0;
+  margin-bottom: 4vh;
 }
 
 .bulletPoints {
