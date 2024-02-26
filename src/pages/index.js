@@ -34,7 +34,6 @@ export default function Home() {
         <h2 className={index_styles.title}>
         David is a {currentTitle}
         </h2>
-        {/* Add styles in new class other than title*/}
         <ul className={index_styles.bulletPoints}>
           <li>Currently a Web Designer at the Buchtel College of Arts & Sciences.</li>
           <li>Previously a Support Analyst, then Systems Administrator Intern with the IT Department.</li>
