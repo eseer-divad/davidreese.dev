@@ -7,6 +7,14 @@
   min-height: 100vh;
 }
 
+.title {
+  margin-bottom: 0;
+}
+
+.bulletPoints {
+  margin-top: 0;
+}
+
 .description {
   display: inherit;
   justify-content: inherit;

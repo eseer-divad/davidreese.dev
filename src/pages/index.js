@@ -31,9 +31,9 @@ export default function Home() {
       </Head> 
 
       <main className={index_styles.main}>
-        <h1 className={index_styles.title}>
+        <h2 className={index_styles.title}>
         David is a {currentTitle}
-        </h1>
+        </h2>
         {/* Add styles in new class other than title*/}
         <ul className={index_styles.bulletPoints}>
           <li>Currently a Web Designer at the Buchtel College of Arts & Sciences.</li>
