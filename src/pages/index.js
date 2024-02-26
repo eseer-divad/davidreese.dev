@@ -39,7 +39,7 @@ export default function Home() {
           <li>Previously a Support Analyst, then Systems Administrator Intern with the IT Department.</li>
           <li>Employed & earning a B.S. of Computer Science @ The University of Akron.</li>
         </ul>
-      </main>
+      </main>   
     </div>
   );
 }
