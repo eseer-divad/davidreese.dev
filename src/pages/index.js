@@ -33,31 +33,34 @@ export default function Home() {
       <main className={index_styles.main}>
         <div class="container">
           <div class="row">
+            <div class="col">
             <h1 className={index_styles.title}>
                   David is {currentTitle}
             </h1>
             <div class="row">
               <ul className={index_styles.bulletPoints}>
-                <p>Currently a Web Designer at the Buchtel College of Arts & Sciences.</p>
-                <p>Previously a Support Analyst, then Systems Administrator Intern with the IT Department.</p>
-                <p>Employed & earning a B.S. of Computer Science @ The University of Akron.</p>
+                <p>◍ Web Designer for the Buchtel College of Arts & Sciences.</p>
+                <p>◍ Previously an IT Support Analyst, then Systems Administrator Intern on-campus.</p>
+                <p>◍ Employed & earning a B.S. of Computer Science @ The University of Akron.</p>
               </ul>
             </div>
+            </div>
+            <div class="col"></div>
           </div>
           <h1 className={index_styles.title}>
             Projects:
           </h1>
           <div class="row">
             <Card class="col-sm">
-              <h3>Floorspaces.io</h3>
+              <h3>◌ Floorspaces.io</h3>
               <p>Current largest project, floor-modeling software allowing businesses to create interactive live maps of their own data. Utilizes Unity, React, .NET, and more.</p>
             </Card>
             <Card class="col-sm">
-              <h3>Damask HR + React</h3>
+              <h3>◌ Damask HR + React</h3>
               <p>Rewriting an HR System Template on GitHub. Originally an Angular & Django app written with Andrew Markland & Kevin Dillman.</p>
             </Card>
             <Card class="col-sm">
-              <h3>plannerCLI</h3>
+              <h3>◌ plannerCLI</h3>
               <p>I'm writing a task management CLI leveraging oclif, sqlite3, and an animated interface with Node.js packages.</p>
             </Card>
           </div>
