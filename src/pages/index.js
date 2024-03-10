@@ -44,18 +44,21 @@ export default function Home() {
               </ul>
             </div>
           </div>
-          <h2 className={index_styles.title}>
+          <h1 className={index_styles.title}>
             Projects:
-          </h2>
+          </h1>
           <div class="row">
             <Card class="col-sm">
-              <p>aaaa</p>
+              <h3>Floorspaces.io</h3>
+              <p>Current largest project, floor-modeling software allowing businesses to create interactive live maps of their own data. Utilizes Unity, React, .NET, and more.</p>
             </Card>
             <Card class="col-sm">
-              <p>aaaa</p>
+              <h3>Damask HR + React</h3>
+              <p>Rewriting an HR System Template on GitHub. Originally an Angular & Django app written with Andrew Markland & Kevin Dillman.</p>
             </Card>
             <Card class="col-sm">
-              <p>aaaa</p>
+              <h3>plannerCLI</h3>
+              <p>I'm writing a task management CLI leveraging oclif, sqlite3, and an animated interface with Node.js packages.</p>
             </Card>
           </div>
         </div>
