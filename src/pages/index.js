@@ -47,7 +47,7 @@ export default function Home() {
             </div>
             <div class="col"></div>
           </div>
-          <h1 className={index_styles.title}>
+          <h1 className={index_styles.subtitle}>
             Projects:
           </h1>
           <div class="row">

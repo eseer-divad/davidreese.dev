@@ -5,14 +5,24 @@
   align-items: left;
   padding: 6rem;
   min-height: 100vh;
+  font-family: "VT323", monospace;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .title {
   margin-bottom: 4vh;
+  font-size: 4.5rem;
+}
+
+.subtitle {
+  margin-bottom: 1.5vh;
+  font-size: 3.5rem;
 }
 
 .bulletPoints {
   margin-top: 0;
+  font-size: 1.2rem;
 }
 
 .description {
