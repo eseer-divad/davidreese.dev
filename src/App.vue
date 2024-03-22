@@ -5,13 +5,15 @@ import Bio from './components/Bio.vue'
 
 <template>
   <header>
-    <div class="wrapper">
-      <Bio msg="David Reese" />
+    <div>
+      <div class="wrapper">
+        <Bio msg="David Reese" />
 
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
+        <nav>
+          <RouterLink to="/">Home</RouterLink>
+          <RouterLink to="/about">About</RouterLink>
+        </nav>
+      </div>
     </div>
   </header>
 
@@ -20,13 +22,8 @@ import Bio from './components/Bio.vue'
 
 <style scoped>
 header {
-  line-height: 1.5;
+  line-height: 2.5;
   max-height: 100vh;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
 }
 
 nav {
