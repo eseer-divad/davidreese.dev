@@ -8,16 +8,25 @@ defineProps<{
   <div class="greetings">
     <h1 class="peach">{{ msg }}</h1>
     <h3>
-      You’ve successfully created a project with
-      <a href="https://vitejs.dev/" target="_blank" rel="noopener">Vite</a> +
-      <a href="https://vuejs.org/" target="_blank" rel="noopener">Vue 3</a>. What's next?
+      I am a <span class="orange">software engineer, designer,</span> and
+      <span class="orange">IT specialist</span> in the
+      <span class="cyan">Greater Cleveland</span> area. I am an undergraduate student of
+      <span class="orange">Computer Science @ The University of Akron.</span>
     </h3>
   </div>
 </template>
 
 <style scoped>
 .peach {
-  color: rgb(255, 218, 185);
+  color: rgb(255, 227, 203);
+}
+
+.orange {
+  color: rgb(255, 172, 100);
+}
+
+.cyan {
+  color: rgb(146, 255, 253);
 }
 
 h1 {
@@ -28,7 +37,7 @@ h1 {
 }
 
 h3 {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 .greetings h1,
