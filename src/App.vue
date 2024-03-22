@@ -1,12 +1,12 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+import Bio from './components/Bio.vue'
 </script>
 
 <template>
   <header>
     <div class="wrapper">
-      <HelloWorld msg="David Reese" />
+      <Bio msg="David Reese" />
 
       <nav>
         <RouterLink to="/">Home</RouterLink>
@@ -34,6 +34,10 @@ nav {
   font-size: 12px;
   text-align: center;
   margin-top: 2rem;
+}
+
+nav a {
+  color: rgb(255, 227, 203);
 }
 
 nav a.router-link-exact-active {
@@ -81,3 +85,4 @@ nav a:first-of-type {
   }
 }
 </style>
+./components/Bio.vue
