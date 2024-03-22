@@ -3,6 +3,7 @@
     <i>
       <slot name="icon"></slot>
     </i>
+    <img />
     <div class="details">
       <h3>
         <slot name="heading"></slot>
@@ -24,10 +25,6 @@
   margin-left: 1rem;
 }
 
-#heading a {
-  color: rgb(255, 227, 203);
-}
-
 i {
   display: flex;
   place-items: center;
@@ -37,10 +34,10 @@ i {
 }
 
 h3 {
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   font-weight: 500;
-  margin-bottom: 0.4rem;
-  color: var(--color-heading);
+  margin-bottom: 0.6rem;
+  color: rgb(255, 194, 141);
 }
 
 @media (min-width: 1024px) {

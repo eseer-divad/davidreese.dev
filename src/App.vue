@@ -8,21 +8,19 @@ import Bio from './components/Bio.vue'
     <div>
       <div class="wrapper">
         <Bio msg="David Reese" />
-
         <nav>
-          <RouterLink to="/">Home</RouterLink>
+          <RouterLink to="/">Projects</RouterLink>
           <RouterLink to="/about">About</RouterLink>
         </nav>
       </div>
     </div>
   </header>
-
   <RouterView />
 </template>
 
 <style scoped>
 header {
-  line-height: 2.5;
+  line-height: 3.5;
   max-height: 100vh;
 }
 

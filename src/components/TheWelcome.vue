@@ -1,84 +1,58 @@
 <script setup lang="ts">
 import WelcomeItem from './WelcomeItem.vue'
-import DocumentationIcon from './icons/IconDocumentation.vue'
+import CommunityIcon from './icons/IconCommunity.vue'
 import ToolingIcon from './icons/IconTooling.vue'
 import EcosystemIcon from './icons/IconEcosystem.vue'
-import CommunityIcon from './icons/IconCommunity.vue'
-import SupportIcon from './icons/IconSupport.vue'
 </script>
 
 <template>
-  <h1 style="color: white">Developer Projects</h1>
   <WelcomeItem>
     <template #icon>
-      <DocumentationIcon />
+      <EcosystemIcon />
     </template>
-    <template #heading>Documentation</template>
+    <img src="/floorspaces.png" alt="Floorspaces.io Image" class="welcome-image" />
+    <template #heading>Floorspaces.io</template>
 
-    Vue’s
-    <a href="https://vuejs.org/" target="_blank" rel="noopener">official documentation</a>
-    provides you with all information you need to get started.
+    <span style="color: white; font-size: 1.4rem">
+      Enable any business to create "floorspaces" with their data, allowing employees and customers
+      a dynamic experience in your venue.
+    </span>
   </WelcomeItem>
 
   <WelcomeItem>
     <template #icon>
       <ToolingIcon />
     </template>
-    <template #heading>Tooling</template>
-
-    This project is served and bundled with
-    <a href="https://vitejs.dev/guide/features.html" target="_blank" rel="noopener">Vite</a>. The
-    recommended IDE setup is
-    <a href="https://code.visualstudio.com/" target="_blank" rel="noopener">VSCode</a> +
-    <a href="https://github.com/johnsoncodehk/volar" target="_blank" rel="noopener">Volar</a>. If
-    you need to test your components and web pages, check out
-    <a href="https://www.cypress.io/" target="_blank" rel="noopener">Cypress</a> and
-    <a href="https://on.cypress.io/component" target="_blank" rel="noopener"
-      >Cypress Component Testing</a
-    >.
-
-    <br />
-
-    More instructions are available in <code>README.md</code>.
+    <img src="/damask.png" alt="Damask Image" class="welcome-image" />
+    <template #heading>Damask HR & Payroll</template>
+    <span style="color: white; font-size: 1.4rem"
+      >Human resources management application, being rewritten to integrate into Floorspaces in the
+      future.</span
+    >
   </WelcomeItem>
 
   <WelcomeItem>
     <template #icon>
+      <!-- EcosystemIcon along with an image for Ecosystem -->
       <EcosystemIcon />
     </template>
-    <template #heading>Ecosystem</template>
-
-    Get official tools and libraries for your project:
-    <a href="https://pinia.vuejs.org/" target="_blank" rel="noopener">Pinia</a>,
-    <a href="https://router.vuejs.org/" target="_blank" rel="noopener">Vue Router</a>,
-    <a href="https://test-utils.vuejs.org/" target="_blank" rel="noopener">Vue Test Utils</a>, and
-    <a href="https://github.com/vuejs/devtools" target="_blank" rel="noopener">Vue Dev Tools</a>. If
-    you need more resources, we suggest paying
-    <a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">Awesome Vue</a>
-    a visit.
-  </WelcomeItem>
-
-  <WelcomeItem>
-    <template #icon>
-      <CommunityIcon />
-    </template>
-    <template #heading>Community</template>
-
-    Got stuck? Ask your question on
-    <a href="https://chat.vuejs.org" target="_blank" rel="noopener">Vue Land</a>, our official
-    Discord server, or
-    <a href="https://stackoverflow.com/questions/tagged/vue.js" target="_blank" rel="noopener"
-      >StackOverflow</a
-    >. You should also subscribe to
-    <a href="https://news.vuejs.org" target="_blank" rel="noopener">our mailing list</a> and follow
-    the official
-    <a href="https://twitter.com/vuejs" target="_blank" rel="noopener">@vuejs</a>
-    twitter account for latest news in the Vue world.
+    <img src="/plannerCLI.png" alt="plannerCLI Image" class="welcome-image" />
+    <template #heading>plannerCLI</template>
+    <span style="color: white; font-size: 1.4rem"
+      >Day planner / task list Node.js CLI application made with the Open CLI Framework, SQLite, and
+      Chalk.</span
+    >
   </WelcomeItem>
 </template>
 
 <style>
 a {
   color: rgb(255, 227, 203);
+}
+
+.welcome-image {
+  width: 100%;
+  object-fit: cover;
+  margin-right: 8px;
 }
 </style>
